@@ -41,7 +41,7 @@ document.getElementById('knop').onclick= function hi(){
 		  	console.log(lat)
 
 		//variabele voor request
-		   	var websitetijd='http://api.timezonedb.com/v2.1/get-time-zone';
+		   	var websitetijd='https://api.timezonedb.com/v2.1/get-time-zone';
 			var keytijd='I4PF3UVHOX2Z';
 
 		//api timezone 
