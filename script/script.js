@@ -1,6 +1,8 @@
 
  	//submit knop
 document.getElementById('knop').onclick= function hi(){
+
+	
 	//invoerveld andere plek in grid
 	  var element = document.getElementById("container");
  	  element.classList.remove("container");
