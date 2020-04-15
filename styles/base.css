@@ -1,0 +1,186 @@
+body {
+  font-family: Quicksand;
+  background: #efefef;
+  margin: 0;
+  background-image: url('images/city.png');
+  transition: background-image 4s cubic-bezier(0.45, 0, 0.55, 1);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin-right: 0;
+}
+/*Het invoerveld (+icon)*/
+header{
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+}
+
+.headerboven{
+  font-size: 19px;
+  text-align: left;
+  justify-content: left;
+  transition:  1s ease-in;
+    margin-top: 10px;
+}
+.img{
+  float:left;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+#capital{
+  font-size: 15px;
+  margin-top :0px;
+}
+input{
+  font-size: 17px;
+}
+button{
+  font-size: 17px;
+  font-family: Quicksand;
+  background-color: #5FB7AE;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+/*blok waar tijd en datum instaan*/
+aside{
+  padding: 0px;
+  padding-right: 50px;
+}
+.aside{
+  float: right;
+  background-color: #5FB7AE;
+  margin-top: 20px;
+  color: white;
+  padding-left: 10px;
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 0px;
+}
+
+/*tijd en datum px*/
+#demo{
+  font-size: 21px;
+  margin-bottom: 0px;
+  font-weight: 560;
+}
+#demo2{
+  font-size: 14px;
+  margin-top: 0px;  
+}
+
+#demo3{
+  font-size: 14px;
+}
+
+/*map*/
+main{
+  justify-content: center;
+  text-align: center;
+  padding: auto;
+}
+
+#map {
+  height: 100%;
+  width: 95%;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+/*pop up lay out */
+
+ .mapboxgl-popup-close-button {
+  font-size: 16px;
+  color: #fff;
+}
+.mapboxgl-popup-content {
+  padding: 20px 25px 15px 20px;
+  color: #fff;
+  background-color: #17887D;
+}
+.mapboxgl-popup-content h3 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: #175641;
+} 
+
+/*schrem kleiner dan 760 pixels */
+@media screen and (max-width: 760px) {
+  img{
+    width: 80px;
+    height: 80px;
+  }
+  .headerboven{
+    font-size: 16px;
+  }
+  input{
+    font-size: 14px;
+  }
+  button{
+    font-size: 14px;
+  }
+  .aside{
+    height: 90px;
+  }
+  #demo{
+    font-size: 17px;
+  }
+}
+
+/*schrem kleiner dan 645 pixels */
+@media screen and (max-width: 645px) {
+  .headerboven{
+    font-size: 13px;
+  }
+  input{
+    font-size: 11px;
+  }
+  button{
+    font-size: 11px;
+  }
+  .aside{
+    width: 150px;
+    height: 80px;
+  }
+  #demo{
+    font-size: 15px;
+  }
+  #demo2{
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+  #demo3{
+    font-size: 13px;
+    margin-top: 0px;
+  }
+}
+
+/*schrem kleiner dan 567 pixels*/
+@media screen and (max-width: 567px) {
+  .aside{
+    width: 100%;
+    height: 40px;
+    border-radius: 0px;
+    display: inline-block;
+    margin-top: 0px;
+  }
+  aside{
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+}
+#demo{
+  margin-top: 0px;
+}
+  #demo2{
+    display: none;
+  }

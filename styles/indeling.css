@@ -1,0 +1,59 @@
+.container{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 200px 300px 200px;
+	grid-template-areas:
+	"aside aside aside"
+	"header header header"
+	"main main main"
+	;
+}
+
+header {
+	grid-area:header;
+}
+
+aside{
+	grid-area:aside;
+}
+
+main{
+	grid-area:main;
+}
+
+
+.containertwee{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+  "header header aside"
+  "main main main"
+  ;
+  transition: all 5s ease-in;
+  ;
+}
+/*schem kleiner dan 567 pixels */
+@media screen and (max-width: 567px) {
+.containertwee{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 0.5fr 5fr;
+  grid-template-areas:
+  "header header header"
+  "aside aside aside"
+  "main main main"
+  ;
+  transition: all 5s ease-in;
+  ;
+}
+
+  }
